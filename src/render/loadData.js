@@ -1,6 +1,6 @@
 //Used to Get Some Data from the Server 
 /* Classic HTTP Callback request */
-let xmlHttpRequest = new XMLHttpRequest();
+/*let xmlHttpRequest = new XMLHttpRequest();
 xmlHttpRequest.open("GET", "https://reqres.in//api/users?page=2");
 xmlHttpRequest.send();
 const response = xmlHttpRequest.responseText;
@@ -19,3 +19,5 @@ async function fetchData() {
     console.log("Data Fetched: ", response);
   }
 }
+
+fetchData();*/
