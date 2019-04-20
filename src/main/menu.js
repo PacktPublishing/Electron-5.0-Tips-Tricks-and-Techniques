@@ -1,4 +1,4 @@
-const { Menu } = require("electron");
+const { Menu, BrowserView } = require("electron");
 
 const menu1Template =  [
   {
