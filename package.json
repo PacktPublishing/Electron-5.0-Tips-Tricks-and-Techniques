@@ -54,6 +54,7 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "pino": "^5.12.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   }

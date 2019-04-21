@@ -26,13 +26,13 @@ function createWindow() {
   //Creating Custom Menu 
   toggleAppMenu(1);
   // and load the index.html of the app.
-  /*mainWindow.loadURL(
+  mainWindow.loadURL(
     url.format({
-      pathname: path.join(__dirname, "..", "externalContent/malicious.html"),
+      pathname: path.join(__dirname, "..", "dist/index.html"),
       protocol: "file:",
       slashes: true
     })
-  );*/
+  );
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
@@ -123,5 +123,3 @@ function createWindowSafe(title, url, options = {}) {
   win.loadURL(url);
 }
 module.exports.createSafeWindow = createWindowSafe;
-
-
