@@ -94,7 +94,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n__webpack_require__(/*! ./render/loadData */ \"./src/render/loadData.js\");\n\n__webpack_require__(/*! ./render/config */ \"./src/render/config.js\");\n\n//React, Vanilla Javascript ES6 ESNext\nvar _require = __webpack_require__(/*! electron */ \"electron\"),\n    ipcRenderer = _require.ipcRenderer;\n\nfunction handleErr(err, lineno, colno) {\n  ipcRenderer.send(\"renderingError\", err, lineno, colno);\n}\n\nsetTimeout(function () {\n  //Dispatch Exception to the Main Process\n  handleErr(\"Some Exceptions has been Thrown\", 13, 0);\n}, 3000); //Global Exceptions and Errors\n//Registered on the GLOBAL window object\n\nwindow.onerror = function (event, source, lineno, colno, err) {\n  handleErr(err, lineno, colno);\n};\n\n//# sourceURL=webpack:///./src/app.js?");
+eval("\n\n__webpack_require__(/*! ./render/loadData */ \"./src/render/loadData.js\");\n\n__webpack_require__(/*! ./render/config */ \"./src/render/config.js\");\n\n//React, Vanilla Javascript ES6 ESNext\nvar _require = __webpack_require__(/*! electron */ \"electron\"),\n    ipcRenderer = _require.ipcRenderer; //ipcRenderer.send(\"IPCEvent\", \"Event Dispatched\");\n\n\nfunction handleErr(err, lineno, colno) {\n  ipcRenderer.send(\"renderingError\", err, lineno, colno);\n}\n\nsetTimeout(function () {\n  //Dispatch Exception to the Main Process\n  handleErr(\"Some Exceptions has been Thrown\", 13, 0);\n}, 3000); //Global Exceptions and Errors\n//Registered on the GLOBAL window object\n\nwindow.onerror = function (event, source, lineno, colno, err) {\n  handleErr(err, lineno, colno);\n};\n\n//# sourceURL=webpack:///./src/app.js?");
 
 /***/ }),
 

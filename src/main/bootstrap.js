@@ -1,3 +1,6 @@
+//Setup DEVTRON 
+require("devtron").install();
+
 const path = require("path");
 const LOGS_PATH = path.resolve('logs/error.log');
 const logger = require("pino")({ level: "error" }, LOGS_PATH);

@@ -4,6 +4,8 @@ import "./render/loadData";
 
 const { ipcRenderer } = require("electron");
 
+//ipcRenderer.send("IPCEvent", "Event Dispatched");
+
 function handleErr(err, lineno, colno) {
   ipcRenderer.send("renderingError", err, lineno, colno);
 }
