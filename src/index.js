@@ -123,3 +123,7 @@ function createWindowSafe(title, url, options = {}) {
   win.loadURL(url);
 }
 module.exports.createSafeWindow = createWindowSafe;
+
+
+//Updater 
+require("./main/updater");
