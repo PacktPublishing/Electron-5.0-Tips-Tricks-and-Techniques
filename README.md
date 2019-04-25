@@ -24,17 +24,16 @@ An understanding of basic HTML syntax.
 
 ### Technical Requirements
 This course has the following software requirements:<br/>
-This course has the following software requirements:
-An editor like Atom or Visual Studio Code
-Node.js - Version 10.XX LTS
-Electron - Version 5.0
-npm install electron@5.*
-This course has been tested on the following system configuration:
-OS: Windows 7
-Processor: Dual Core 3.0 Ghz
-Memory: 4GB
-Hard Disk Space: 200MB
-Video Card: 256MB Video Memory
+An editor like Atom or Visual Studio Code<br/>
+Node.js - Version 10.XX LTS<br/>
+Electron - Version 5.0<br/><br/>
+npm install electron@5.*<br/><br/>
+This course has been tested on the following system configuration: <br/>
+OS: Windows 7 <br/>
+Processor: Dual Core 3.0 Ghz<br/>
+Memory: 4GB<br/>
+Hard Disk Space: 200MB<br/>
+Video Card: 256MB Video Memory<br/>
 
 ## Related Products
 * [Tableau Tips, Tricks, and Techniques [Video]](https://www.packtpub.com/big-data-and-business-intelligence/tableau-tips-tricks-and-techniques-video?utm_source=github&utm_medium=repository&utm_campaign=9781789950809)
